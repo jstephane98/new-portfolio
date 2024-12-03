@@ -534,7 +534,7 @@ export default function EnhancedPortfolio() {
           </header>
 
           <main className="container mx-auto px-4 py-20">
-            <section id="home" className="min-h-screen flex items-center justify-center py-20 relative">
+            <section id="home" className="lg:min-h-screen flex items-center justify-center py-20 relative">
               {/* Optional: Animated Background Effect */}
               <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 via-transparent to-purple-500/5" />
@@ -664,7 +664,7 @@ export default function EnhancedPortfolio() {
 
             <section id="about" className="py-20">
               <h2 className={`text-3xl font-bold mb-8 text-center ${isDarkMode ? 'text-white' : 'text-black'}`}>About Me</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-6">
                 <Window title="about-me.txt" isActive>
                   <div className="font-mono space-y-4 text-zinc-300">
                     <div className="typing-effect">
@@ -998,7 +998,7 @@ export default function EnhancedPortfolio() {
 
             <section id="contact" className="py-20">
               <h2 className={`text-3xl font-bold mb-8 text-center ${isDarkMode ? 'text-white' : 'text-black'}`}>Contact</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-6">
                 <Window title="contact-form.jsx" isActive>
                   <form className="space-y-4">
                     <div>
