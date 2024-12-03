@@ -1,5 +1,21 @@
 import { useState, useEffect } from 'react'
-import { ArrowUpRight, Github, Linkedin, Terminal, Moon, Sun, ChevronDown, Mail, Phone, MapPin, Clock, FileText, Code2 } from 'lucide-react'
+import {
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  Terminal,
+  Moon,
+  Sun,
+  ChevronDown,
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  FileText,
+  X,
+  Code2,
+  Twitter, LucideTwitter
+} from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -305,7 +321,7 @@ export default function EnhancedPortfolio() {
             ))}
             <li className="md:ml-4">
               <motion.a
-                href="https://drive.google.com/file/d/1wzmmR0z68oF1bbAdFbrzcoAl6c1ZVeTh/view?usp=sharing"
+                href="https://drive.google.com/file/d/1AlvmuTYyK4y2JWRNLHbAufCUU8MEZQqE/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -317,7 +333,7 @@ export default function EnhancedPortfolio() {
                 Resume
               </motion.a>
             </li>
-            <li>
+            {/*<li>
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 className="text-zinc-400 hover:text-green-500 transition-colors"
@@ -325,7 +341,7 @@ export default function EnhancedPortfolio() {
               >
                 {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </button>
-            </li>
+            </li>*/}
           </ul>
         </div>
       </nav>
@@ -510,7 +526,7 @@ export default function EnhancedPortfolio() {
         </motion.div>
       ) : (
         <>
-          <ThemeControls />
+          {/*<ThemeControls />*/}
           <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
             <nav className="container mx-auto px-6 py-4">
               <Navigation />
@@ -546,7 +562,7 @@ export default function EnhancedPortfolio() {
                 <h1 className={`text-5xl md:text-7xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-black'}`}>
                   Hi, <span className="text-green-500">I'm</span>{' '}
                   <span className="relative">
-                    Sandeep Makwana
+                    Joël Kamo
                     <motion.span
                       className="absolute -bottom-2 left-0 w-full h-1 bg-green-500/20"
                       initial={{ width: 0 }}
@@ -565,10 +581,10 @@ export default function EnhancedPortfolio() {
                   className={`text-xl max-w-2xl mx-auto mb-8 ${isDarkMode ? 'text-zinc-400' : 'text-gray-600'}`}
                 >
                   I'm a Software Engineer specializing in{' '}
-                  <span className="text-green-500 font-semibold">full-stack development</span> and{' '}
-                  <span className="text-green-500 font-semibold">cloud architecture</span>,
+                  <span className="text-green-500 font-semibold">full-stack development</span>
                   passionate about building elegant solutions to complex problems.
                 </motion.p>
+
                 {/* CTA Buttons */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -587,7 +603,7 @@ export default function EnhancedPortfolio() {
                     Get in touch
                   </motion.a>
                   <motion.a
-                    href="https://drive.google.com/file/d/1wzmmR0z68oF1bbAdFbrzcoAl6c1ZVeTh/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1AlvmuTYyK4y2JWRNLHbAufCUU8MEZQqE/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
@@ -608,10 +624,10 @@ export default function EnhancedPortfolio() {
                   className="mt-12 flex justify-center gap-6"
                 >
                   {[
-                    { icon: Github, href: 'https://github.com/isandeepMakwana', label: 'GitHub' },
-                    { icon: Linkedin, href: 'https://www.linkedin.com/in/sandeepmakwana', label: 'LinkedIn' },
-                    { icon: Code2, href: 'https://leetcode.com/isandeepMakwana', label: 'LeetCode' },
-                    { icon: Mail, href: 'mailto:sandeepmakwana.work@gmail.com', label: 'Email' }
+                    { icon: Github, href: 'https://github.com/jstephane98', label: 'GitHub' },
+                    { icon: Linkedin, href: 'https://www.linkedin.com/in/joel-kamo-147436193', label: 'LinkedIn' },
+                    { icon: LucideTwitter, href: 'https://x.com/StphaneJoel2', label: 'X' },
+                    { icon: Mail, href: 'mailto:kamostephane@gmail.com', label: 'Email' }
                   ].map((social, index) => (
                     <motion.a
                       key={index}
@@ -655,8 +671,8 @@ export default function EnhancedPortfolio() {
                       <div className="flex gap-4 items-center hover:bg-zinc-800/50 p-2 rounded transition-colors">
                         <span className="text-zinc-600 select-none">01</span>
                         <span>
-                          Hi! I'm <span className="text-green-500 font-semibold">Sandeep Makwana</span>, 
-                          a <span className="text-blue-400 font-semibold">Software Engineer II</span> at ConsultAdd.
+                          Hi! I'm <span className="text-green-500 font-semibold">Joël Kamo</span>,
+                          a <span className="text-blue-400 font-semibold">Software Engineer II</span>
                         </span>
                       </div>
                       <div className="flex gap-4 items-center hover:bg-zinc-800/50 p-2 rounded transition-colors">
@@ -669,8 +685,7 @@ export default function EnhancedPortfolio() {
                       <div className="flex gap-4 items-center hover:bg-zinc-800/50 p-2 rounded transition-colors">
                         <span className="text-zinc-600 select-none">03</span>
                         <span>
-                          Specializing in <span className="text-pink-400">full-stack development</span> and
-                          <span className="text-orange-400"> cloud architecture</span>
+                          Specializing in <span className="text-pink-400">full-stack development</span>
                         </span>
                       </div>
                       <div className="flex gap-4 items-center hover:bg-zinc-800/50 p-2 rounded transition-colors">
@@ -678,12 +693,6 @@ export default function EnhancedPortfolio() {
                         <span>
                           Passionate about <span className="text-green-400">clean code</span> and
                           <span className="text-blue-400"> optimal solutions</span>
-                        </span>
-                      </div>
-                      <div className="flex gap-4 items-center hover:bg-zinc-800/50 p-2 rounded transition-colors">
-                        <span className="text-zinc-600 select-none">05</span>
-                        <span>
-                          Recognized as <span className="text-yellow-500">Employee of the Month 7 times</span>
                         </span>
                       </div>
                     </div>
@@ -698,8 +707,8 @@ export default function EnhancedPortfolio() {
                           <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                           Languages & Tools
                         </h3>
-                        <div className="flex flex-wrap gap-3">
-                          {['Python', 'JavaScript', 'TypeScript', 'C', 'C++', 'SQL', 'Bash', 'Java'].map(skill => (
+                        <div className="flex flex-wrap gap-2">
+                          {['PHP', 'JavaScript', 'HTML', 'CSS', 'SCSS', 'SQL', 'Bash'].map(skill => (
                             <motion.span
                               key={skill}
                               whileHover={{ scale: 1.05 }}
@@ -716,8 +725,8 @@ export default function EnhancedPortfolio() {
                           <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
                           Frameworks & Libraries
                         </h3>
-                        <div className="flex flex-wrap gap-3">
-                          {['Django', 'Flask', 'FastAPI', 'React', 'Tailwind', 'Pytest', 'Pandas', 'NumPy'].map(skill => (
+                        <div className="flex flex-wrap gap-2">
+                          {['Laravel', 'VueJs', 'React', 'Tailwind', 'Livewire', 'InertiaJs', 'UIkit', 'Moodle', 'Bootstrap'].map(skill => (
                             <motion.span
                               key={skill}
                               whileHover={{ scale: 1.05 }}
@@ -732,10 +741,10 @@ export default function EnhancedPortfolio() {
                       <div>
                         <h3 className="text-yellow-500 mb-4 font-semibold flex items-center gap-2">
                           <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                          Cloud & DevOps
+                          Work organization
                         </h3>
-                        <div className="flex flex-wrap gap-3">
-                          {['AWS', 'Docker', 'Jenkins', 'Git', 'CI/CD'].map(skill => (
+                        <div className="flex flex-wrap gap-2">
+                          {['Git', 'CI/CD', 'Jira', 'Agile', 'Miro'].map(skill => (
                             <motion.span
                               key={skill}
                               whileHover={{ scale: 1.05 }}
@@ -752,9 +761,7 @@ export default function EnhancedPortfolio() {
                   <Window title="achievements.md">
                     <div className="space-y-4">
                       {[
-                        { icon: '🏆', color: 'text-green-500', text: 'AWS Certified Solutions Architect - Associate' },
-                        { icon: '👥', color: 'text-yellow-500', text: 'Led team of 28 developers with 30% faster delivery' },
-                        { icon: '🎯', color: 'text-blue-400', text: '7x Employee of the Month' }
+                        { icon: '🏆', color: 'text-green-500', text: 'Responsive Web Design - freeCodeCamp' },
                       ].map((achievement, index) => (
                         <motion.div
                           key={index}
@@ -778,25 +785,25 @@ export default function EnhancedPortfolio() {
                   {[
                     {
                       id: '01',
-                      title: 'E-commerce Platform',
+                      title: 'E-commerce Platform (Order Ease)',
                       year: '2024',
-                      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Stripe'],
+                      tech: ['VueJs', 'TypeScript', 'Tailwind CSS', 'Stripe', 'Laravel', 'MySql'],
                       description: 'A fully responsive e-commerce platform with secure payments and real-time inventory management.'
                     },
                     {
                       id: '02',
-                      title: 'AI-Powered Analytics Dashboard',
-                      year: '2023',
-                      tech: ['React', 'Python', 'TensorFlow', 'D3.js'],
-                      description: 'An advanced analytics dashboard leveraging AI for predictive insights and data visualization.'
+                      title: 'Moodle Plugins',
+                      year: '2024',
+                      tech: ['PHP', 'Moodle', 'JavaScript'],
+                      description: 'Creation and maintenance of Moodle plugins'
                     },
                     {
                       id: '03',
-                      title: 'Blockchain Voting System',
+                      title: 'API Gateway Payment For Mobile ',
                       year: '2023',
-                      tech: ['Solidity', 'Ethereum', 'Web3.js', 'React'],
-                      description: 'A secure and transparent voting system built on blockchain technology for organizational decision-making.'
-                    }
+                      tech: ['Laravel', 'MySql'],
+                      description: 'Integration of a money mobile payment gateway (Orange Money, MTN Mobile Money, etc.)'
+                    },
                   ].map((project) => (
                     <motion.div
                       key={project.id}
@@ -833,7 +840,7 @@ export default function EnhancedPortfolio() {
                   Career Journey
                 </h2>
                 <motion.a
-                  href="https://drive.google.com/file/d/1wzmmR0z68oF1bbAdFbrzcoAl6c1ZVeTh/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1AlvmuTYyK4y2JWRNLHbAufCUU8MEZQqE/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
@@ -842,9 +849,10 @@ export default function EnhancedPortfolio() {
                     hover:bg-zinc-700 transition-colors duration-300 border border-green-500/20"
                 >
                   <FileText className="w-4 h-4" />
-                  <span className="font-mono text-sm">Sandeep_makwana_resume.pdf</span>
+                  <span className="font-mono text-sm">Joel_Kamo_resume.pdf</span>
                 </motion.a>
               </div>
+
               <Window title="career.json" isActive={activeWindow === 'career'}>
                 <div className="space-y-12">
                   {/* ConsultAdd Full-time Role */}
@@ -859,39 +867,39 @@ export default function EnhancedPortfolio() {
                     <div className="space-y-4">
                       <div className="flex justify-between items-center">
                         <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
-                          Software Engineer II
+                          Software engineering
                         </h3>
-                        <span className="text-green-500 font-mono text-sm">Jul 2022 - Present</span>
+                        <span className="text-green-500 font-mono text-sm">Jan 2024 - Present</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className={`font-semibold ${isDarkMode ? 'text-zinc-300' : 'text-gray-700'}`}>ConsultAdd</span>
+                        <span className={`font-semibold ${isDarkMode ? 'text-zinc-300' : 'text-gray-700'}`}>Web Developer</span>
                         <span className="text-zinc-500">•</span>
-                        <span className="text-zinc-500">Pune</span>
+                        <span className="text-zinc-500">Remote</span>
                       </div>
                       <ul className="space-y-3 text-zinc-400">
                         <li className="flex gap-2">
                           <span className="text-green-500">→</span>
-                          <span>Designed and deployed AWS data lake solution using S3, Glue, and Athena, enhancing data accessibility</span>
+                          <span>General and individual module design</span>
                         </li>
                         <li className="flex gap-2">
                           <span className="text-green-500">→</span>
-                          <span>Created dynamic React.js components for clinical trials system, improving efficiency by 40%</span>
+                          <span>Implementation of tools to manage payments from external aggregators</span>
                         </li>
                         <li className="flex gap-2">
                           <span className="text-green-500">→</span>
-                          <span>Developed and optimized RESTful APIs using Django and DRF, boosting response times by 25%</span>
+                          <span>Organizing tasks in Jira</span>
                         </li>
                         <li className="flex gap-2">
                           <span className="text-green-500">→</span>
-                          <span>Managed data migration from AWS S3 to Snowflake, reducing processing time by 50%</span>
+                          <span>Setting up backend functionality for users</span>
                         </li>
                         <li className="flex gap-2">
                           <span className="text-green-500">→</span>
-                          <span>Built real-time data pipeline using AWS Kinesis, Lambda, and DynamoDB</span>
+                          <span>Write unit tests before writing code</span>
                         </li>
                       </ul>
                       <div className="flex flex-wrap gap-2 pt-2">
-                        {['AWS', 'React', 'Django', 'Python', 'Snowflake', 'Docker', 'CI/CD'].map((tech) => (
+                        {['Moodle', 'PHP', 'Totara', 'Laravel', 'VueJS', 'CI/CD'].map((tech) => (
                           <span key={tech} className="px-2 py-1 bg-zinc-800/50 rounded-full text-xs text-zinc-400">
                             {tech}
                           </span>
@@ -912,31 +920,35 @@ export default function EnhancedPortfolio() {
                     <div className="space-y-4">
                       <div className="flex justify-between items-center">
                         <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
-                          Software Engineer Intern
+                          Software engineering
                         </h3>
-                        <span className="text-blue-500 font-mono text-sm">Jan 2022 - Jun 2022</span>
+                        <span className="text-blue-500 font-mono text-sm">Nov 2019 - Dec 2023</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className={`font-semibold ${isDarkMode ? 'text-zinc-300' : 'text-gray-700'}`}>ConsultAdd</span>
+                        <span className={`font-semibold ${isDarkMode ? 'text-zinc-300' : 'text-gray-700'}`}>Web Developer</span>
                         <span className="text-zinc-500">•</span>
-                        <span className="text-zinc-500">Remote</span>
+                        <span className="text-zinc-500">Full Time</span>
                       </div>
                       <ul className="space-y-3 text-zinc-400">
                         <li className="flex gap-2">
                           <span className="text-blue-500">→</span>
-                          <span>Restructured legacy codebase to align with industry best practices</span>
+                          <span>Backend development</span>
                         </li>
                         <li className="flex gap-2">
                           <span className="text-blue-500">→</span>
-                          <span>Engineered AWS Step Functions for Glue job orchestration</span>
+                          <span>integration of external api</span>
                         </li>
                         <li className="flex gap-2">
                           <span className="text-blue-500">→</span>
-                          <span>Increased unit test coverage from 60% to 80%</span>
+                          <span>Payment api integration: PayPal, stripe, Mobile Money and other payment aggregators (intouch, flutterwave, cinetpay, etc...)</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-blue-500">→</span>
+                          <span>front-end intervention with HTML5, CSS, vanilla JS, vuejs</span>
                         </li>
                       </ul>
                       <div className="flex flex-wrap gap-2 pt-2">
-                        {['AWS', 'Python', 'Step Functions', 'Glue', 'Unit Testing'].map((tech) => (
+                        {['PHP', 'Laravel', 'VueJs', 'Tailwind Css', 'UIkit', 'Unit Testing'].map((tech) => (
                           <span key={tech} className="px-2 py-1 bg-zinc-800/50 rounded-full text-xs text-zinc-400">
                             {tech}
                           </span>
@@ -957,22 +969,22 @@ export default function EnhancedPortfolio() {
                     <div className="space-y-4">
                       <div className="flex justify-between items-center">
                         <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
-                          Bachelor of Technology in Computer Science
+                          ADVANCED TECHNICAL DIPLOMA in Computer Science
                         </h3>
-                        <span className="text-purple-500 font-mono text-sm">Graduated Jun 2022</span>
+                        <span className="text-purple-500 font-mono text-sm">Graduated Jun 2019</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className={`font-semibold ${isDarkMode ? 'text-zinc-300' : 'text-gray-700'}`}>
-                          Rajiv Gandhi Proudyogiki Vishwavidyalaya
+                          SIANTOU University Institute
                         </span>
                         <span className="text-zinc-500">•</span>
-                        <span className="text-zinc-500">Bhopal, MP</span>
+                        <span className="text-zinc-500">Software engineering</span>
                       </div>
                       <div className="text-zinc-400">
-                        <span className="text-purple-500 font-semibold">CGPA:</span> 8.6/10.0
+                        <span className="text-purple-500 font-semibold">CGPA:</span> 3.2/4
                       </div>
                       <div className="flex flex-wrap gap-2 pt-2">
-                        {['Data Structures', 'Algorithms', 'Computer Networks', 'Operating Systems'].map((subject) => (
+                        {['Data Structures', 'Algorithms', 'Computer Networks',].map((subject) => (
                           <span key={subject} className="px-2 py-1 bg-zinc-800/50 rounded-full text-xs text-zinc-400">
                             {subject}
                           </span>
@@ -1046,9 +1058,9 @@ export default function EnhancedPortfolio() {
                     {/* Contact Information */}
                     <div className="space-y-4">
                       {[
-                        { icon: Mail, label: 'sandeepmakwana.work@gmail.com', href: 'mailto:sandeepmakwana.work@gmail.com' },
-                        { icon: Phone, label: '+91 6263216081', href: 'tel:+916263216081' },
-                        { icon: MapPin, label: 'Pune, Maharashtra, India', href: null },
+                        { icon: Mail, label: 'kamostephane@gmail.com', href: 'mailto:kamostephane@gmail@gmail.com' },
+                        { icon: Phone, label: '+237 656 55 28 58', href: 'tel:+237656552858' },
+                        { icon: MapPin, label: 'Yaoundé, Cameroon', href: null },
                       ].map((contact, index) => (
                         <motion.div
                           key={index}
@@ -1069,9 +1081,9 @@ export default function EnhancedPortfolio() {
                     <div className="pt-4 border-t border-zinc-800">
                       <div className="space-y-4">
                         {[
-                          { icon: Github, label: 'github.com/isandeepmakwana', href: 'https://github.com/isandeepMakwana' },
-                          { icon: Linkedin, label: 'linkedin.com/in/sandeepmakwana', href: 'https://www.linkedin.com/in/sandeepmakwana' },
-                          { icon: Code2, label: 'leetcode.com/isandeepMakwana', href: 'https://leetcode.com/isandeepMakwana' },
+                          { icon: Github, label: 'github.com/jstephane98', href: 'https://github.com/jstephane98?tab=repositories' },
+                          { icon: Linkedin, label: 'linkedin.com/in/stephane-kamo-147436193', href: 'https://www.linkedin.com/in/stephane-kamo-147436193' },
+                          { icon: X, label: 'x.com/StphaneJoel2', href: 'https://x.com/StphaneJoel2' },
                         ].map((social, index) => (
                           <motion.div
                             key={index}
@@ -1079,7 +1091,7 @@ export default function EnhancedPortfolio() {
                             className="group flex items-center gap-4 p-2 rounded-md hover:bg-zinc-800/50 transition-colors"
                           >
                             <social.icon className="text-zinc-400 group-hover:text-green-500 transition-colors" />
-                            <a href={social.href} className="text-zinc-300 group-hover:text-green-500 transition-colors">{social.label}</a>
+                            <a href={social.href} target='_blank' className="text-zinc-300 group-hover:text-green-500 transition-colors">{social.label}</a>
                             <ArrowUpRight className="text-zinc-600 w-4 h-4 group-hover:text-green-500 transition-colors ml-auto" />
                           </motion.div>
                         ))}
@@ -1108,7 +1120,7 @@ export default function EnhancedPortfolio() {
 
           <footer className="bg-black/80 backdrop-blur-sm py-8">
             <div className="container mx-auto px-6 text-center">
-              <p className="text-zinc-400">Copyright &copy; 2024 Sandeep Makwana. All rights reserved.</p>
+              <p className="text-zinc-400">Copyright &copy; 2024 Joël Kamo. All rights reserved.</p>
             </div>
           </footer>
           <Analytics />
